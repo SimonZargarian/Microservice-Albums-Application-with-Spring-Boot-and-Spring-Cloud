@@ -1,0 +1,4 @@
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+COPY target/PhtotoAppAlbums-0.0.1-SNAPSHOT.jar PhtotoAppAlbums.jar
+ENTRYPOINT ["java","-jar","PhtotoAppAlbums.jar"
